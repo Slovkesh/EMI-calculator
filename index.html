@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>EMI calculator</h1>
+    </div>
+    <div class="container">
+        <div class="content-head">
+            <h1>EMI calculator</h1>
+        </div>
+
+        <div class="child-container">
+            <label for="principle">principle</label>
+            <input type="number" name="principle" id="principle" value="10000" onchange="updateSlider();">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="5000000" value="100000" step="100000" class="slider"
+                    id="principle-slider" onchange="updateValue();">
+            </div>
+        </div>
+        <div class="child-container">
+            <label for="roi">Rate of Interest</label>
+            <input type="number" name="roi" id="roi" value="10.5" onchange="updateSlider();">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="20" value="10.5" step="0.25" class="slider" id="roi-slider"
+                    onchange="updateValue();">
+            </div>
+        </div>
+        <div class="child-container">
+            <label for="tenure">Tenure (Months)</label>
+            <input type="number" name="tenure" id="tenure" value="12" onchange="updateSlider();">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="360" value="10" step="12" class="slider" id="tenure-slider"
+                    onchange="updateValue();">
+            </div>
+        </div>
+        <div class="output">
+            <span>EMI: </span>
+            <span id="emi">879</span>
+        </div>
+        <div class="output">
+            <span>Interest: </span>
+            <span id="interest">500</span>
+        </div>
+        <div class="output">
+            <span>Total: </span>
+            <span id="total-payable">10550</span>
+        </div>
+        <canvas id="myChart"></canvas>
+
+        <datalist id="l">
+            <option value="0" label="0"></option>
+            <option value="50000" label="50000"></option>
+            <option value="100000" label="100000"></option>
+            <option value="200000" label="200000"></option>
+            <option value="250000" label="250000"></option>
+            <option value="300000" label="300000"></option>
+            <option value="350000" label="350000"></option>
+            <option value="400000" label="400000"></option>
+            <option value="450000" label="450000"></option>
+            <option value="500000" label="500000"></option>
+        </datalist>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

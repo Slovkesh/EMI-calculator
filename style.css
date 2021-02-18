@@ -1,0 +1,110 @@
+body{
+    background-image:url("/background1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    padding: 5px;
+    font-size: 2em;
+    margin-top: 0;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(87, 87, 87, 0.651);
+}
+.header h1{
+    display: block;
+}
+
+.content-head{
+    background-color: rgb(255, 137, 147);
+}
+
+.container{
+    display: grid;
+    background-color: #fff;
+    /* padding: 20px; */
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 7px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: inherit;
+}
+
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: #505050;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: rgb(163, 50, 50);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: rgb(163, 50, 50);
+    cursor: pointer;
+  }
+
+  label{
+      text-align: left;
+      font-size: 1em;
+      padding: 5px;
+  }
+  .child-container{
+      text-align: left;
+      padding: 20px;
+  }
+  .output{
+      display: flex;
+      justify-content: space-around;
+      justify-items: auto;
+      flex-direction: column;
+      margin: 10px 20px;
+      border:  0.01px solid grey;
+      font-size: 1.5em;
+
+
+  }
+  span{
+      pad: 20px;
+  }
+
+  /* ---------------------------------------------------------------slider---------------------------------------------------- */
+
+  
